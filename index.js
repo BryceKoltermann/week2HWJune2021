@@ -1,5 +1,4 @@
 let position = 0
-let currentSlide = 1
 
 function previousImage(){
     const photo = document.getElementById("jsSliderActive");
