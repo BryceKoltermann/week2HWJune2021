@@ -1,0 +1,93 @@
+h1{
+    width: 600px;
+    margin: .5em auto;
+    background-color: gainsboro;
+    text-align: center;
+}
+.mainContainer{
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+    background-image: url(./images/naturebackground.jpg);
+}
+#slider{
+    display: flex;
+    flex-direction: row;
+    border: 4px solid whitesmoke;
+    width: 270px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+} 
+
+#slidingpic{
+    animation: oscillate 50s cubic-bezier(0.075, 0.82, 0.165, .9) .5s infinite alternate;
+}
+img{
+    width: 269px;
+    height: 199px;
+    padding: .5px;
+}    
+@keyframes oscillate {
+    0%{
+        transform: translateX(0px);
+    }
+    11%{
+        transform: translateX(-270px);
+    }
+    22%{
+        transform: translateX(-540px);
+    }
+    33%{
+        transform: translateX(-810px);
+    }
+    44%{
+        transform: translateX(-1080px);
+    }
+    55%{
+        transform: translateX(-1350px);
+    }
+    66%{
+        transform: translateX(-1620px);
+    }
+    77%{
+        transform: translateX(-1890px);
+    }
+    88%{
+        transform: translateX(-2160px);
+    }
+    100%{
+        transform: translateX(-2430px);
+    }
+}  
+
+#jsSliderContainer{
+    border: 4px solid whitesmoke;
+    width: 270px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+
+#jsSliderActive{
+    display: flex;
+}
+
+button{
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    }
+
+#previous{
+    position: absolute;
+    left: 33%;
+    top: 83%;
+}
+
+#next{
+    position: absolute;
+    left: 62%;
+    top: 83%;
+}
